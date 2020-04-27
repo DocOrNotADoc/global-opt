@@ -1,0 +1,24 @@
+.more {
+    margin-bottom: 57px;
+    &__card {
+        margin-top: 35px;
+    }
+    &__img {
+
+    }
+    &__label {
+        margin-top: 27px;
+        color: $mainColor;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+
+    }
+    &__descr {
+        margin-top: 8px;
+        color: $darkfont;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: justify;
+    }
+}

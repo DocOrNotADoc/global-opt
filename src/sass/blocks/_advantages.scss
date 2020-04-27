@@ -1,0 +1,27 @@
+.advantages {
+    background-color: #f3f3f3;
+    padding-bottom: 51px;
+    
+    &__card {
+        display: flex;
+        justify-content: center;
+		margin-top: 35px;
+        &__text {
+            padding-left: 25px;
+            max-height: 447px;
+        }
+        &__ttl {
+            font-size: 18px;
+            color: $mainColor;
+            font-weight: 700;
+            text-align-last: left;
+        }
+        &__descr {
+            margin-top: 8px;
+            font-size: 16px;
+            color: $darkfont;
+            font-weight: 300;
+            text-align-last: left;
+        }
+    }
+}

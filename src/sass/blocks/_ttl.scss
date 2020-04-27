@@ -1,0 +1,16 @@
+.ttl {
+    &__advantages {
+        @include ttl;
+        color: $darkfont;
+        text-transform: uppercase;
+        padding-top: 59px;
+        margin-bottom: -4px;
+    }
+    &__more {
+        @include ttl;
+        color: $darkfont;
+        text-transform: uppercase;
+        padding-top: 51px;
+    }
+    
+}

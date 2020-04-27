@@ -1,0 +1,67 @@
+.promo  {
+    min-height: 678px;
+    padding-top: 132px;
+    background: url(../../img/promoBG.png) center (center / cover) no-repeat;
+    text-align: center;
+    &__descrTtl {
+        color: $lightFont;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    &__ttl {
+        margin-top: 26px;
+        color: $mainColor;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    &__subttl {
+        margin-top: 23px;
+        color: $lightFont;
+        font-size: 42px;
+        font-weight: 400;
+    }
+    &__divider {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_line {
+            width: 365px;
+            height: 2px;
+            background-color: $lightFont;
+        }
+        &_dot {
+            margin: 0 15px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: $lightFont;
+        }
+    }
+    &__cards {
+        margin-top: 31px;
+        .col {
+            width: 260px;
+            color: $lightFont;
+        }
+    }
+    &__card {
+        &_icon {
+            width: 67px;
+            height: 63px;
+            margin: 0 auto;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &_descr {
+            margin-top: 7px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+
+
+}

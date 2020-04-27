@@ -1,0 +1,53 @@
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.header {   
+    &__logo {
+        margin-top: 23px;
+        width: 96px;
+        height: 100px;
+        background: url(../../icons/logo.png) center (center/cover) no-repeat;
+    }
+    &__menu {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 45px;
+        max-height: 23px;
+        ul {
+            padding: 0 10px;
+            border-right: 1px dotted $lightFont;
+            height: 100%;
+            &:last-child {
+                border-right: none;
+            }
+            a {
+                text-decoration: none;
+                padding: 0;
+                color: $lightFont;
+                font-size: 15px;
+            }
+        }
+        
+    }
+    &__contacts {
+        margin-top: 48px;
+        &_descr {
+            color: $lightFont;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: right;
+        }
+        a {
+            text-decoration: none;
+            color: $lightFont;
+            font-size: 19px;
+            font-weight: 700;
+            :hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
