@@ -12,5 +12,9 @@
         text-transform: uppercase;
         padding-top: 51px;
     }
-    
+    &__inchina {
+        @include ttl;
+        color: $lightFont;
+        margin-top: 20px;
+    }
 }

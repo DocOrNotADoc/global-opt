@@ -1,0 +1,23 @@
+.inchina {
+    padding: 57px 0 75px 0;
+    background: url(../../img/agentBG.png) center (center / cover) no-repeat;
+    &__icon {
+        display: flex;
+        width: 103px;
+        height: 103px;
+        border: 2px solid $lightFont;
+        border-radius: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        img {
+
+        }
+    }
+    &__descr {
+        color: $lightFont;
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
