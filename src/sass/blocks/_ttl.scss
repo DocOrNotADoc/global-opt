@@ -17,4 +17,10 @@
         color: $lightFont;
         margin-top: 20px;
     }
+    &__price {
+        @include ttl;
+        color: $darkfont;
+        text-transform: uppercase;
+        margin-top: 53px;
+    }
 }

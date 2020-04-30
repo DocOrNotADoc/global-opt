@@ -3,5 +3,5 @@ regular - fw400
 bold - fw700
 
     row {
-        greed-column-gap: 1px;
+        greed-column-gap: 32px;
     }
