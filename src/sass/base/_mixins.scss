@@ -4,5 +4,19 @@
     text-align: center;
 }
 @mixin btn {
-
+    background-color: $mainColor;
+    color: $lightFont;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+@mixin icon {
+    display: flex;
+    width: 103px;
+    height: 103px;
+    border-radius: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }

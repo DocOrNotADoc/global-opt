@@ -1,0 +1,32 @@
+.feedform {
+    padding: 56px 0;
+    &__top-border-wrapper {
+        background-color: #fff;
+        margin: 0 auto;
+        width: 132px;
+        height: 132px;
+        padding: 13px;
+        margin-top: -230px;
+    }
+    &__bottom-border-wrapper {
+        background-color: #fff;
+        margin: 0 auto;
+        width: 200px;
+        height: 45px;
+        margin-top: 77px;
+    }
+    &__consultation {
+        &_ttl {
+            color: #3a3a3a;
+            font-size: 28px;
+            font-weight: 400;
+            text-align: center;
+        }
+        &_icon {
+            @include icon;
+            margin-right: 0px;
+            border: 1px solid $mainColor;
+            background-color: #fff;
+        }
+    }
+}

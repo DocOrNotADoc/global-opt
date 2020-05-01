@@ -1,0 +1,21 @@
+.form {
+    &__letsconsult {
+        margin-top: 71px;
+        display: flex;
+        justify-content: center;
+        padding: 68px 0 53px 0;
+        border: 1px solid #C4C4C4;
+        input {
+            margin: 0 3px;
+            width: 268px;
+            height: 45px;
+            border: 1px solid #C4C4C4;
+            border-radius: 23px;
+            padding-left: 28px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #101010;
+        }
+    }
+
+}
