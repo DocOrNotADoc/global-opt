@@ -12,7 +12,7 @@
         text-transform: uppercase;
         padding-top: 51px;
     }
-    &__inchina {
+    &__inchina, &__managers {
         @include ttl;
         color: $lightFont;
         margin-top: 20px;

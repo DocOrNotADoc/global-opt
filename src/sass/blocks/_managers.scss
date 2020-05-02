@@ -1,0 +1,16 @@
+.managers {
+    margin-top: 176px;
+    padding: 57px 0 75px 0;
+    background: url(../../img/managersBG.png) center (center / cover) no-repeat;
+    &__icon {
+        @include icon;
+        border: 2px solid $lightFont;
+    }
+    &__descr {
+        margin-top: 18px;
+        font-size: 19px;
+        font-weight: 300;
+        text-align: center;
+        color: $lightFont;
+    }
+}

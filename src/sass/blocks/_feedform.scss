@@ -1,5 +1,6 @@
 .feedform {
-    padding: 56px 0;
+    padding-top: 56px;
+    position: relative;
     &__top-border-wrapper {
         background-color: #fff;
         margin: 0 auto;
@@ -9,6 +10,7 @@
         margin-top: -230px;
     }
     &__bottom-border-wrapper {
+        position: absolute;
         background-color: #fff;
         margin: 0 auto;
         width: 200px;

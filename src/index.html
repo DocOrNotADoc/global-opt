@@ -259,10 +259,14 @@
 
             <h2 class="feedform__consultation_ttl">Заказать бесплатную консультацию</h2>
             
-            <form action="#" class="form__letsconsult">
-                <input name="name" placeholder="Ваше имя..." type="text">
-                <input name="phone" placeholder="Ваш телефон...">
-                <input name="email" placeholder="Ваш E-mail..." type="email">
+            <form id="form-consult" class="form__letsconsult" action="#">
+                <input name="name" required placeholder="Ваше имя..." type="text">
+                <input name="phone" required placeholder="Ваш телефон...">
+                <input name="email" required placeholder="Ваш E-mail..." type="email">
+                
+                <div class="feedform__bottom-border-wrapper">
+                    <button class="btn__feedform">Отправить заявку</button>
+                </div>
             </form>
 
             <div class="feedform__top-border-wrapper">
@@ -270,14 +274,27 @@
                     <img src="./icons/sendOrder.png" alt="feedback">
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="feedform__bottom-border-wrapper">
-                <button class="btn__feedform">Отправить заявку</button>
+    <section class="managers">
+        <div class="container">
+
+            <div class="managers__icon">
+                <img src="./icons/managers.png" alt="managers">
             </div>
+            <h2 class="ttl__managers">Менеджеры компании</h2>
+            <div class="managers__descr">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые<br>поставки от завода-изготовителя.</div>
+
         </div>
     </section>
 
 
     <footer></footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="./js/jquery.validate.min.js" ></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
