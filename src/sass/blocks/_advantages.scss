@@ -1,7 +1,7 @@
 .advantages {
-    background-color: #f3f3f3;
+    background-color: $greyBG;
+    padding-top: 59px;
     padding-bottom: 51px;
-    
     &__card {
         display: flex;
         justify-content: center;

@@ -30,7 +30,4 @@ $(document).ready(function(){
     validateForms('#form-consult');
     // validateForms('#order form');
 
-    
-
-
 });

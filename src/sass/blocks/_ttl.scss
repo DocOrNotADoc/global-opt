@@ -1,24 +1,21 @@
 .ttl {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
     &__advantages {
-        @include ttl;
         color: $darkfont;
         text-transform: uppercase;
-        padding-top: 59px;
         margin-bottom: -4px;
     }
-    &__more {
-        @include ttl;
+    &__more, &__scheme {
         color: $darkfont;
         text-transform: uppercase;
-        padding-top: 51px;
     }
     &__inchina, &__managers {
-        @include ttl;
         color: $lightFont;
         margin-top: 20px;
     }
     &__price {
-        @include ttl;
         color: $darkfont;
         text-transform: uppercase;
         margin-top: 53px;
