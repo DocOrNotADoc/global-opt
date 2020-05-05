@@ -1,0 +1,30 @@
+.carousel {
+    margin-top: 30px;
+    &__revew {
+        width: 601px;
+        min-height: 242px;
+    }
+    &__avatar {
+        width: 115px;
+        height: 115px;
+        margin: 0 auto;
+        img {
+            border-radius: 100%;
+            border-color: #fff;
+        }
+    }
+    &__ttl {
+        font-size: 18px;
+        font-weight: 700;
+        color: $darkfont;
+        text-align: center;
+        margin-top: 19px;
+    }
+    &__descr {
+        font-size: 13px;
+        font-weight: 300;
+        color: $darkfont;
+        text-align: justify;
+        margin-top: 5px;
+    }
+}

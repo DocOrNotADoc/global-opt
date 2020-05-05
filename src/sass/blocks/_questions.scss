@@ -1,0 +1,42 @@
+.questions {
+    height: 440px;
+    margin-top: 64px;
+    padding: 62px 0 70px 0;
+    background: url(../../img/questionsBG.png) center (center / cover) no-repeat;
+    &__form {
+        width: 900px;
+        height: 300px;
+        background-color: rgba(238,238,238,0.7);
+        &_wrapper {
+            padding: 18px 0 0 0;
+        }
+        textarea {
+            width: 814px;
+            height: 72px;
+            margin-top: 7px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #101010;
+            padding: 10px 0 0 27px;
+            resize: none;
+        }
+    }
+    &__hat {
+        height: 70px;
+        background-color: #25333c;
+        text-transform: uppercase;
+        text-align: center;
+        color: $lightFont;
+        padding-top: 21px;
+    }
+    &__ttl {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 14px;
+    }
+    &__subttl {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
