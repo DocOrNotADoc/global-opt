@@ -10,17 +10,17 @@
 
 <body>
 
-    <header>
+    <header  id="up">
         <div class="container">
             <div class="row">
                 <div class="header__logo col-1"><a href="#"></a></div>
                     <li class="header__menu col-7">
-                        <ul class="header__menu__item"><a href="#">Преимущества</a></ul>
-                        <ul class="header__menu__item"><a href="#">Наша работа</a></ul>
-                        <ul class="header__menu__item"><a href="#">Цены</a></ul>
-                        <ul class="header__menu__item"><a href="#">Схема работы</a></ul>
-                        <ul class="header__menu__item"><a href="#">Отзывы</a></ul>
-                        <ul class="header__menu__item"><a href="#">Контакты</a></ul>
+                        <ul class="header__menu__item"><a href="#advantages">Преимущества</a></ul>
+                        <ul class="header__menu__item"><a href="#ourjob">Наша работа</a></ul>
+                        <ul class="header__menu__item"><a href="#price">Цены</a></ul>
+                        <ul class="header__menu__item"><a href="#scheme">Схема работы</a></ul>
+                        <ul class="header__menu__item"><a href="#feedbackhat">Отзывы</a></ul>
+                        <ul class="header__menu__item"><a href="#contacts">Контакты</a></ul>
                     </li>
                 <div class="header__contacts">
                     <div class="header__contacts_descr">Есть вопросы?</div>
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
 
             <h2 class="ttl ttl__advantages">Преимущества работы с GlobalOpt</h2>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section class="more">
+    <section id="ourjob" class="more">
         <div class="container">
 
             <h2 class="ttl ttl__more">Наша работа - больше чем просто доставка</h2>
@@ -201,7 +201,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
 
             <h2 class="ttl ttl__price">Цены на любой вариант доставки</h2>
@@ -289,7 +289,7 @@
         </div>
     </section>
 
-    <section class="scheme">
+    <section id="scheme" class="scheme">
         <div class="container">
 
             <h2 class="ttl ttl__scheme">Схема работы с нами</h2>
@@ -354,7 +354,7 @@
         </div>
     </section>
 
-    <section class="feedbackhat">
+    <section id="feedbackhat" class="feedbackhat">
         <div class="container">
             <h2 class="ttl ttl__feedbackhat">отзывы наших клиентов</h2>
             <div class="divider"></div>
@@ -382,10 +382,11 @@
         <!-- </div> -->
     </div>
 
-    <section class="questions">
+    <section id="form-que" class="questions">
         <div class="container">
 
             <div class="questions__form">
+
                 <div class="questions__hat">
                     <div class="questions__ttl">Остались вопросы?</div>
                     <div class="questions__subttl">Напишите нам!</div>
@@ -398,21 +399,51 @@
                         <input name="email" placeholder="Ваш E-mail..." type="email">
                         <textarea name="message" placeholder="Сообщение..." type="text"></textarea>
 
-                        <button class="btn__feedform btn__feedform_que">Отправить заявку</button>
-                        
+                        <button class="btn__feedform btn__feedform_que">Отправить заявку</button>                        
                     </form>
                 </div>
-
 
             </div>
 
         </div>
-    </section>
+    </section id>
 
-    <footer></footer>
+    <iframe id="contacts" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2245.6065444046712!2d37.6250293!3d55.747965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1588800179879!5m2!1sru!2sru" allowfullscreen=""></iframe>
+
+
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1 footer__logo">
+                    <img src="./icons/logo.png" alt="logo">
+                </div>
+                <div class="col-5 footer__ttl">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
+                <div class="col-3 offset-1 footer__contacts">
+                    <div class="footer__contacts__que">Есть вопросы?</div>
+                    <a href="tel:+79264230100">+7 (926) 423 01 00</a>
+                </div>
+                <button class="btn__footer">Перезвоните мне</button>
+            </div>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__copyright">© 2010 Example.com.ru</div>
+                <div class="footer__polytics"><a href="#">Политика конфидециальности</a></div>
+                <div class="footer__madin">Вёрстка сайта: В.Мальгин</div>
+            </div>
+        </div>
+    </footer">
+
+    <a href="#up"  class="pageup">
+        <img src="./icons/chevron-circle-up-solid.svg" alt="up">
+    </a>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery.validate.min.js" ></script>
     <script src="./js/script.js"></script>
 </body>
