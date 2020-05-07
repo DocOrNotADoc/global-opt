@@ -28,7 +28,7 @@ $(document).ready(function(){
     };
     // validateForms('#consult-form');
     validateForms('#form-consult');
-    validateForms('#form-que');
+    validateForms('#form-que form');
     // validateForms('#order form');
 
     // Smooth scroll and pageup
@@ -47,4 +47,20 @@ $(document).ready(function(){
         return false;
     });
 
+    $('input[name=phone]').mask("+7 (999) 999-99-99")
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consult, #order').fadeOut();
+            $('.overlay, #TY').fadeIn();
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });

@@ -1,0 +1,66 @@
+.footer {
+    height: 202px;
+    background-color: #25333C;
+    &__logo {
+        width: 68px;
+        height: 68px;
+        margin-top: 25px;
+        img {
+            width: 100%;
+        }
+    }
+    &__ttl {
+        margin-top: 48px;
+        color: $lightFont;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__divider {
+        margin: 0 auto;
+        margin-top: 26px;
+        width: 1171px;
+        height: 1px;
+        background-color: #677177;
+    }
+    &__contacts {
+        margin-top: 30px;
+        text-align: right;
+        &__que {
+            color: $lightFont;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        a {
+            text-decoration: none;
+            color: $lightFont;
+            font-size: 19px;
+            font-weight: 700;
+            :hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 30px;
+        font-size: 13px;
+        font-weight: 300;
+        justify-content: space-between;
+    }
+    &__copyright {
+        color: $lightFont;
+    }
+    &__polytics {
+        a {
+            text-decoration: underline;
+            color: $mainColor;
+            margin-right: 170px;
+            :hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__madin {
+        color: $lightFont;
+    }
+}
