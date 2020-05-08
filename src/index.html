@@ -260,10 +260,15 @@
             <h2 class="feedform__consultation_ttl">Заказать бесплатную консультацию</h2>
             
             <form id="form-consult" class="form__letsconsult" action="#">
-                <input name="name" required placeholder="Ваше имя..." type="text">
-                <input name="phone" required placeholder="Ваш телефон...">
-                <input name="email" required placeholder="Ваш E-mail..." type="email">
-                
+                <div class="wrapper-inp">
+                    <input name="name" required placeholder="Ваше имя..." type="text">
+                </div>
+                <div class="wrapper-inp">
+                    <input name="phone" required placeholder="Ваш телефон...">
+                </div>
+                <div class="wrapper-inp">
+                    <input name="email" required placeholder="Ваш E-mail..." type="email">
+                </div>
                 <div class="feedform__bottom-border-wrapper">
                     <button class="btn__feedform">Отправить заявку</button>
                 </div>
@@ -367,17 +372,28 @@
             <div class="carousel__inner">
                 <div class="carousel__revew">
                     <div class="carousel__avatar">
+                        <img src="./img/revewDmIv.png" alt="avatar">
+                    </div>
+                    <div class="carousel__ttl">Дмитрий Иванов</div>
+                    <div class="carousel__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
+                </div>
+
+                <div class="carousel__revew">
+                    <div class="carousel__avatar">
                         <img src="./img/revewAva.png" alt="avatar">
                     </div>
                     <div class="carousel__ttl">Анисимова Ольга</div>
                     <div class="carousel__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
                 </div>
-                <div>
-                    
+
+                <div class="carousel__revew">
+                    <div class="carousel__avatar">
+                        <img src="./img/revewSerV.png" alt="avatar">
+                    </div>
+                    <div class="carousel__ttl">Сергей Валиев</div>
+                    <div class="carousel__descr">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользоваться услугами даной компании</div>
                 </div>
-                <div>
-                    
-                </div>
+                
             </div>
         <!-- </div> -->
     </div>
@@ -394,9 +410,16 @@
 
                 <div class="questions__form_wrapper">
                     <form id="form-questions" class="form__questions" action="#">
-                        <input name="name" placeholder="Ваше имя..." type="text">
-                        <input name="phone" placeholder="Ваш телефон...">
-                        <input name="email" placeholder="Ваш E-mail..." type="email">
+                        <div class="wrapper-inp">
+                            <input name="name" required placeholder="Ваше имя..." type="text">
+                        </div>
+                        <div class="wrapper-inp">
+                            <input name="phone" required placeholder="Ваш телефон...">
+                        </div>
+                        <div class="wrapper-inp">
+                            <input name="email" required placeholder="Ваш E-mail..." type="email">
+                        </div>
+                    
                         <textarea name="message" placeholder="Сообщение..." type="text"></textarea>
 
                         <button class="btn__feedform btn__feedform_que">Отправить заявку</button>                        

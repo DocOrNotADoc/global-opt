@@ -6,8 +6,9 @@
     &__form {
         margin: 0 auto;
         width: 900px;
-        height: 300px;
+        min-height: 300px;
         background-color: rgba(238,238,238,0.7);
+        padding-bottom: 25px;
         &_wrapper {
             padding: 18px 0 0 0;
         }
