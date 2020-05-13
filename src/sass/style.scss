@@ -11,6 +11,11 @@
     position: relative;
     max-width: 1140px;
     margin: 0 auto;
+    &_slider {
+        position: relative;
+        max-width: 1413px;
+        margin: 0 auto;
+    }
 }
 
 @import "./blocks/header";

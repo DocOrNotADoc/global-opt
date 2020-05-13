@@ -1,5 +1,53 @@
 $(document).ready(function(){
 
+    $('.carousel__slider').slick({
+        centerMode: true,
+        // centerPadding: '45px',
+        speed: 1000,
+        initialSlide: 1,
+        waitForAnimate: false,
+        variableWidth: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/next.png"></button>',
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //             dots: true,
+        //             arrows: false,
+        //         }
+        //     }
+        // ]
+    });
+
+
+    // function toggleSlide (item) {
+    //     $(item).each(function(i) {
+    //         $(this).on('click', function(e) {
+    //             e.preventDefault();
+    //             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+    //             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+    //         });
+    //     });
+    // };
+
+    // toggleSlide('.catalog-item__link');
+    // toggleSlide('.catalog-item__back');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function validateForms(form){
         $(form).validate({
             rules: {
@@ -25,7 +73,7 @@ $(document).ready(function(){
                 }
             }
         });
-    };
+    }
     // validateForms('#consult-form');
     validateForms('#form-consult');
     validateForms('#form-que form');
@@ -47,7 +95,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('input[name=phone]').mask("+7 (999) 999-99-99")
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 
     $('form').submit(function(e) {
         e.preventDefault();
