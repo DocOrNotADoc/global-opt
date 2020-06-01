@@ -1,10 +1,6 @@
 .inchina {
     padding: 57px 0 75px 0;
     background: url(../../img/agentBG.png) center (center / cover) no-repeat;
-    &__icon {
-        @include icon;
-        border: 2px solid $lightFont;
-    }
     &__descr {
         color: $lightFont;
         font-size: 19px;

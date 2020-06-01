@@ -21,7 +21,7 @@
         border-radius: 28px;
         font-size: 17px;
     }
-    &__priceCard {
+    &__price-card {
         margin-top: 22px;
         width: 160px;
         height: 45px;
@@ -29,16 +29,22 @@
         font-size: 14px;
         margin-bottom: 22px;
     }
-    &__feedform {
+    &__consultation {
         display: block;
         margin: 0 auto;
         width: 180px;
         height: 45px;
         border-radius: 23px;
         font-size: 14px;
-        &_que {
-            margin-top: 18px;
-        }
+    }
+    &__questions {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: 45px;
+        border-radius: 23px;
+        font-size: 14px;
+        margin-top: 18px;
     }
     &__footer {
         margin-top: 30px;

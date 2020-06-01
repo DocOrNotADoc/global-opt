@@ -34,12 +34,6 @@ header {
     }
     &__contacts {
         margin-top: 48px;
-        &_descr {
-            color: $lightFont;
-            font-size: 14px;
-            font-weight: 400;
-            text-align: right;
-        }
         a {
             text-decoration: none;
             color: $lightFont;
@@ -49,5 +43,12 @@ header {
                 text-decoration: none;
             }
         }
+    }
+    &__anyquestion {
+        color: $lightFont;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+        margin-top: -6px;
     }
 }

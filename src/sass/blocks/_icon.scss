@@ -1,0 +1,16 @@
+.icon {
+    display: flex;
+    width: 103px;
+    height: 103px;
+    border-radius: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    &__managers, &__inchina {
+        border: 1px solid $lightFont;
+    }
+    &__consultation {
+        border: 1px solid $mainColor;
+        background-color: #fff;
+    }
+}

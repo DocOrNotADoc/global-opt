@@ -40,6 +40,12 @@
             }
         }
     }
+    &__anyquestion {
+        color: $lightFont;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+    }
     &__wrapper {
         display: flex;
         margin-top: 30px;
@@ -60,7 +66,7 @@
             }
         }
     }
-    &__madin {
+    &__madein {
         color: $lightFont;
     }
 }

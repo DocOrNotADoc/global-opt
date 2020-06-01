@@ -7,9 +7,15 @@
         text-transform: uppercase;
         margin-bottom: -4px;
     }
-    &__more, &__scheme, &__feedbackhat {
+    &__more, &__scheme {
         color: $darkfont;
         text-transform: uppercase;
+    }
+    &__feedbackhat {
+        color: $darkfont;
+        text-transform: uppercase;
+        padding-top: 51px;
+        margin-bottom: 19px;
     }
     &__inchina, &__managers {
         color: $lightFont;
