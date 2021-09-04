@@ -1,6 +1,6 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
+const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
@@ -19,7 +19,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(scss|sass)")
+    return gulp.src("src/scss/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+    gulp.watch("src/scss/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
 });
 
@@ -54,10 +54,10 @@ gulp.task('icons', function () {
         .pipe(gulp.dest("dist/icons"));
 });
 
-gulp.task('mailer', function () {
-    return gulp.src("src/mailer/**/*")
-        .pipe(gulp.dest("dist/mailer"));
-});
+// gulp.task('mailer', function () {
+//     return gulp.src("src/mailer/**/*")
+//         .pipe(gulp.dest("dist/mailer"));
+// });
 
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
@@ -65,4 +65,5 @@ gulp.task('images', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'html', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+// gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'html', 'images'));
